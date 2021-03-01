@@ -56,9 +56,15 @@ static const Rule rules[] = {
 	{ NULL,      "spcalc",    NULL,       	    SPTAG(1),     1,           1,         0,        -1 },
 	/* Citrix */
 	{ "Selfservice", "selfservice", NULL,       0,            1,           0,         0,        -1 },
-	{ "wfica",   "",          NULL,             0,            1,           0,         0,        -1 },
+	{ "Wfica",   "",          NULL,             1 << 8,       1,           0,         0,        -1 },
+	{ "Wfica",   "wfica",     NULL,             1 << 8,       1,           0,         0,        -1 },
 	{ "MF_systray", "Notification Area", NULL,  0,            1,           0,         0,        -1 },
 	{ "Remote Desktop Connection", "Remote Desktop Connection",NULL, 0, 1, 0,         0,        -1 },
+	{ "Form1",   "Form1",     "Form1",          1 << 5,       1,           0,         0,        -1 },
+	{ "linphone", "AppRun.wrapped", NULL,       1 << 3,       1,           0,         0,        -1 },
+	{ "linphone", "AppRun.wrapped", "Calls",    1 << 3,       1,           0,         0,        -1 },
+	{ "linphone", "AppRun.wrapped", "Settings", 1 << 3,       1,           0,         0,        -1 },
+	{ "Yubico Authenticator", "yubioath-desktop", "Settings", 1 << 5, 1,   0,         0,        -1 },
 };
 
 /* layout(s) */
