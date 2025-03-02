@@ -1,9 +1,9 @@
 /* See LICENSE file for copyright and license details. */
 
 /* Constants */
-#define TERMINAL "st"
-#define TERMCLASS "St"
-#define BROWSER "librewolf"
+#define TERMINAL "wezterm"
+#define TERMCLASS "org.wezfurlong.wezterm"
+#define BROWSER "brave-browser"
 
 /* appearance */
 static unsigned int borderpx  = 3;        /* border pixel of windows */
